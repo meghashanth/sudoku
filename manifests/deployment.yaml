@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sudoku
+  name: sudoku
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sudoku
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sudoku
+    spec:
+      containers:
+      - image: demoaksacr2.azurecr.io/sudoku
+        name: sudoku
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

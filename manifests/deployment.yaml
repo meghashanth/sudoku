@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: sudoku2
-  name: sudoku2
+    app: sudokuapp
+  name: sudokuapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sudoku2
+      app: sudokuapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: sudoku2
+        app: sudokuapp
     spec:
       containers:
-      - image: webcontiner.azurecr.io/webcontiner
-        name: sudoku2
+      - image: webcontiner.azurecr.io/sudokuapp2
+        name: sudokuapp
         ports:
         - containerPort: 80
         resources: {}

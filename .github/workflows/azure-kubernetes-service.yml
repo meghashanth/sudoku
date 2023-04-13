@@ -7,7 +7,7 @@ name: Build and deploy an app to AKS
 env:
     AZURE_CONTAINER_REGISTRY: webcontiner
     CLUSTER_NAME: testwebcluster
-    CONTAINER_NAME: webcontiner
+    CONTAINER_NAME: sudokuapp2
     DEPLOYMENT_MANIFEST_PATH: ./manifests
     IMAGE_PULL_SECRET_NAME: webcontinersecret
     RESOURCE_GROUP: RG

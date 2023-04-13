@@ -5,12 +5,12 @@ name: Build and deploy an app to AKS
             - main
     workflow_dispatch: null
 env:
-    AZURE_CONTAINER_REGISTRY: demoaksacr2
-    CLUSTER_NAME: demoaks
-    CONTAINER_NAME: sudoku
+    AZURE_CONTAINER_REGISTRY: webcontiner
+    CLUSTER_NAME: testwebcluster
+    CONTAINER_NAME: webcontiner
     DEPLOYMENT_MANIFEST_PATH: ./manifests
-    IMAGE_PULL_SECRET_NAME: demoaksacr2secret
-    RESOURCE_GROUP: aks-backup-rg
+    IMAGE_PULL_SECRET_NAME: webcontinersecret
+    RESOURCE_GROUP: RG
 jobs:
     buildImage:
         permissions:
